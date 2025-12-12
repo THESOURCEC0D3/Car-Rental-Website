@@ -29,6 +29,10 @@
             <a href="#" class="list-none border border-white px-2.5 py-1.5 rounded-2xl bg-blue-800 text-white">Sign Up</a>
         </div>
 
+        <div id="overlay" 
+     class="fixed inset-0 cursor-pointer bg-black bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden z-30 backdrop-blur-lg">
+</div>
+
         <button id="menubtn" class="cursor-pointer md:hidden">
              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
            xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +42,7 @@
         </button>
 
         <div id="mobileMenu" class="shadow-lg
-            transform translate-x-full transition-transform duration-300 absolute top-0 right-0 flex flex-col items-start gap-4 p-4 bg-gray-200  md:hidden">
+            transform translate-x-full transition-transform duration-300 absolute top-0 right-0 flex flex-col items-start gap-4 p-4 bg-gray-200  md:hidden z-50">
              <button id="closeBtn" class="self-end mb-4 cursor-pointer">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
