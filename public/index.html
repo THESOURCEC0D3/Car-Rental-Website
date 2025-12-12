@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jonathan Precious">
+    <meta name="description" content="Fleetly landing page">
+    <title>Fleetly</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body class="min-w-full m-0 p-0">
+    <header class="min-w-full flex justify-between items-center align-baseline bg-gray-300 m-0 p-3">
+        <div class="flex m-0 p-0 items-center">
+            <img src="../assets/icons/favicon.svg" alt="Company Logo" class="w-6 m-0">
+            <p class="text-3xl m-0">Fleetly</p>
+        </div>
+        <nav class="hidden md:block">
+            <ul class="flex gap-2.5">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Why Choose Us</a></li>
+                <li><a href="#">Our Fleet</a></li>
+            </ul>
+        </nav>
+        <div class="hidden md:flex gap-2.5">
+            <a href="#" class="list-none border border-white px-3.5 py-1.5 rounded-2xl">Login</a>
+            <a href="#" class="list-none border border-white px-2.5 py-1.5 rounded-2xl bg-blue-800 text-white">Sign Up</a>
+        </div>
+
+        <button id="menubtn" class="cursor-pointer md:hidden">
+             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+           xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+        </button>
+
+        <div id="mobileMenu" class="shadow-lg
+            transform translate-x-full transition-transform duration-300 absolute top-0 right-0 flex flex-col items-start gap-4 p-4 bg-gray-200  md:hidden">
+             <button id="closeBtn" class="self-end mb-4 cursor-pointer">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
+            <a href="#" class="menu-link">Home</a>
+            <a href="#" class="menu-link">How It Works</a>
+            <a href="#" class="menu-link">Why Choose us</a>
+            <a href="#" class="menu-link">Our fleet</a>
+             <a href="#" class="menu-link border px-4 py-2 rounded-2xl">Login</a>
+    <a href="#" class="menu-link border px-4 py-2 rounded-2xl bg-blue-800 text-white">Sign Up</a>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+
+    <script defer src="./js/sidebarToggle.js"></script>
+
+</body>
+</html>
