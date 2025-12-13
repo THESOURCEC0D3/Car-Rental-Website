@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@layer components{
+    .card-gradient{
+        @apply p-0.5 rounded-2xl bg-linear-to-br from-[rgba(255,255,255,1)] to-[rgba(251,188,4,1)];
+    }
+
+    .card-gradient2{
+        @apply p-0.5 rounded-2xl bg-linear-to-br from-[rgba(251,188,4,1)] to-[rgba(255,255,255,1)];
+    }
+
+    .card{
+        @apply bg-white rounded-2xl p-6 
+    }
+}

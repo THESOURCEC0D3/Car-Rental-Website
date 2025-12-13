@@ -6,6 +6,7 @@ const menuLinks = document.querySelectorAll(".menu-link");
 
 menuBtn.addEventListener("click", () => {
   mobileMenu.classList.remove("translate-x-full");
+  // mobileMenu.classList.remove('hidden')
   menuBtn.classList.add("hidden");
    overlay.classList.remove("opacity-0");
    overlay.classList.add("opacity-70");
@@ -15,6 +16,7 @@ menuBtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
   mobileMenu.classList.add("translate-x-full");
+  //  mobileMenu.classList.add("hidden");
   menuBtn.classList.remove("hidden");
    overlay.classList.add("opacity-0");
    overlay.classList.remove("opacity-70");
@@ -25,6 +27,7 @@ closeBtn.addEventListener("click", () => {
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {
         mobileMenu.classList.add("translate-x-full");
+          // mobileMenu.classList.add("hidden");
         menuBtn.classList.remove("hidden");
         overlay.classList.add("opacity-0");
         overlay.classList.remove("opacity-70");
@@ -36,6 +39,7 @@ menuLinks.forEach(link => {
 overlay.addEventListener('click', () => {
      menuBtn.classList.remove("hidden");
     mobileMenu.classList.add("translate-x-full");
+      // mobileMenu.classList.add("hidden");
      overlay.classList.add("opacity-0");
      overlay.classList.remove("opacity-70");
      overlay.classList.add("pointer-events-none");

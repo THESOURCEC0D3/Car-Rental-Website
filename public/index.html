@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="./style.css">
 
 </head>
-<body class="min-w-full m-0 p-0">
-    <header class="min-w-full flex justify-between items-center align-baseline bg-gray-300 m-0 p-3">
+<body class="min-w-full m-0 p-0 scroll-smooth">
+    <header class="min-w-full flex justify-between items-center align-baseline bg-gray-300/30 m-0 p-3 backdrop-blur-2xl shadow-lg fixed top-0 left-0 z-40">
         <div class="flex m-0 p-0 items-center">
-            <img src="../assets/icons/favicon.svg" alt="Company Logo" class="w-6 m-0">
-            <p class="text-3xl m-0">Fleetly</p>
+            <img src="../assets/icons/favicon.svg" alt="Company Logo" class="w-7 m-0">
+            <p class="text-4xl m-0">Fleetly</p>
         </div>
         <nav class="hidden md:block">
             <ul class="flex gap-2.5">
@@ -29,12 +29,8 @@
             <a href="#" class="list-none border border-white px-2.5 py-1.5 rounded-2xl bg-blue-800 text-white">Sign Up</a>
         </div>
 
-        <div id="overlay" 
-     class="fixed inset-0 cursor-pointer bg-black bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden z-30 backdrop-blur-lg">
-</div>
-
         <button id="menubtn" class="cursor-pointer md:hidden">
-             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
            xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M4 6h16M4 12h16M4 18h16"></path>
@@ -42,7 +38,7 @@
         </button>
 
         <div id="mobileMenu" class="shadow-lg
-            transform translate-x-full transition-transform duration-300 absolute top-0 right-0 flex flex-col items-start gap-4 p-4 bg-gray-200  md:hidden z-50">
+            transform translate-x-full transition-transform duration-300 fixed top-0 right-0 flex flex-col items-start gap-4 p-4 bg-gray-200 w-3/4 rounded-bl-md z-50">
              <button id="closeBtn" class="self-end mb-4 cursor-pointer">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -50,14 +46,103 @@
         </svg>
     </button>
             <a href="#" class="menu-link">Home</a>
-            <a href="#" class="menu-link">How It Works</a>
+            <a href="#how-it-works" class="menu-link">How It Works</a>
             <a href="#" class="menu-link">Why Choose us</a>
             <a href="#" class="menu-link">Our fleet</a>
-             <a href="#" class="menu-link border px-4 py-2 rounded-2xl">Login</a>
-    <a href="#" class="menu-link border px-4 py-2 rounded-2xl bg-blue-800 text-white">Sign Up</a>
+             <a href="#" class="menu-link border px-4 py-2 rounded-2xl w-3/4 text-center">Login</a>
+    <a href="#" class="menu-link border px-4 py-2 rounded-2xl bg-blue-800 text-white w-3/4 text-center">Sign Up</a>
         </div>
     </header>
-    <main></main>
+              <div id="overlay" 
+     class="fixed inset-0 cursor-pointer bg-black bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden z-10 backdrop-blur-lg">
+</div>
+    <main class="pt-5">
+        <section id="hero-section" aria-labelledby="#hero-header" class="flex flex-col gap-16 md:flex-row justify-center items-centerz mt-10 p-2">
+            <div id="section1" class="space-y-6 md:w-[50%] flex flex-col justify-center">
+                <h2 id="hero-header" class="text-5xl md:text-4xl text-center">Drive, Manage, and Earn.<br><span class="text-[rgba(251,188,4,1)]">All in One Platform</span></h2>
+                <p class="text-center text-3xl md:text-2xl">Fleetly lets renters find reliable cars with quick reservations and flexible payments, while giving owners a powerful dashboard to manage fleets, track bookings, and grow revenue all in one seamless platform.</p>
+                <div class="flex flex-col gap-4 md:flex-row justify-center items-center">
+                    <a class="border py-3.5 px-8 rounded-md bg-[rgba(7,26,84,1)] w-3/4 md:w-[50%] text-center text-white">Sign Up</a>
+                    <a class="border py-3.5 px-8 rounded-md w-3/4 md:w-[50%] text-center">Log In</a>
+                </div>
+                 <img src="../assets/images/speedometer.png" alt="" class="blur-sm md:w-[400px] self-center" >
+            </div>
+
+            <div id="section2" class="flex flex-col justify-center items-center gap-6 md:w-[50%]">
+                <div>
+                    <img src="../assets/images/car1.svg" alt="picture of a car"">
+                </div>
+                <div class="flex gap-4 justify-center">
+                    <div>
+                        <p>200km/h</p>
+                        <p>Highest Speed</p>
+                    </div>
+                    <div class="flex gap-1.5">
+                        <div class="w-0.5 bg-gray-500 h-full"></div>
+                        <div>
+                            <p class="">160Km</p>
+                            <p>Battery Range</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1.5">
+                        <div class="w-0.5 bg-gray-500 h-full"></div>
+                        <div>
+                            <p>4 hours</p>
+                            <p>Charging Time</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1.5">
+                        <div class="w-0.5 bg-gray-500 h-full block"></div>
+                        <div>
+                            <p>1696kg</p>
+                            <p>Weight</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" aria-labelledby="#how-header" class="mt-8">
+            <h2 class="text-center text-3xl">How It Works</h2>
+            <p class="text-center mt-3">Simple steps for both renters and owners to get started on fleetly</p>
+
+            <div class="flex gap-5 justify-center items-center mt-6 border w-3/4 mx-auto rounded p-0.5">
+                <a class="flex-1 text-center rounded p-2 bg-[rgba(7,26,84,1)] text-white transition-colors">Renters</a>
+                <a class="flex-1 text-center p-2 rounded transition-colors">Owners</a>
+            </div>
+
+            <div id="card-container" class="mt-10 p-2.5 flex flex-col md:flex-row gap-6 justify-center items-center bg-linear-to-b from-gray-300 to-gray-700">
+                <div class="card-gradient flex-1">
+                    <div class="card flex flex-col gap-2.5 p-5 justify-center items-center">
+                        <img src="../assets/icons/searchIcon.png" alt="search Icon" class="w-12">
+                        <h3 class="text-2xl mb-4">Search</h3>
+                        <p>Easily browse through a wide selection of vehicles based on your location, car type, or budget.</p>
+                    </div>
+                </div>
+                <div class="card-gradient2 flex-1">
+                    <div class="card flex flex-col gap-2.5 p-5 justify-center items-center">
+                        <img src="../assets/icons/calendarIcon.png" alt="book Icon" class="w-12">
+                        <h3 class="text-2xl mb-4">Reserve & Pay</h3>
+                        <p>Once you've found th right car, select your preferred dates and instantly secure it with a safe and seamless payment process.</p>
+                    </div>
+                </div>
+                <div class="card-gradient flex-1">
+                     <div class="card flex flex-col gap-2.5 p-5 justify-center items-center">
+                        <img src="../assets/icons/carIcon.png" alt="book Icon" class="w-12">
+                        <h3 class="text-2xl mb-4">Pick Up</h3>
+                        <p>Collect your car feom the designated pickup location and enjoy your trip with confidence.</p>
+                    </div>
+                </div>
+                <div class="card-gradient2 flex-1">
+                    <div class="card flex flex-col gap-2.5 p-5 justify-center items-center">
+                        <img src="../assets/icons/bookIcon.png" alt="book Icon" class="w-12">
+                        <h3 class="text-2xl mb-4">Manage Bookings</h3>
+                        <p>Keep full control of your reservations directly from the app. Easily view upcoming rentals, make adjustments if your plans change.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 
     <script defer src="./js/sidebarToggle.js"></script>
