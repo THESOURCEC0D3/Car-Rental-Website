@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
@@ -15,6 +16,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -189,6 +192,9 @@
   .fixed {
     position: fixed;
   }
+  .relative {
+    position: relative;
+  }
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
@@ -201,8 +207,14 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .z-0 {
+    z-index: 0;
+  }
   .z-10 {
     z-index: 10;
+  }
+  .z-30 {
+    z-index: 30;
   }
   .z-40 {
     z-index: 40;
@@ -237,6 +249,9 @@
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .hidden {
     display: none;
   }
@@ -248,6 +263,9 @@
   }
   .h-7 {
     height: calc(var(--spacing) * 7);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
   }
   .h-full {
     height: 100%;
@@ -273,8 +291,8 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
-  .w-\[343px\] {
-    width: 343px;
+  .w-full {
+    width: 100%;
   }
   .min-w-full {
     min-width: 100%;
@@ -343,6 +361,9 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
   }
@@ -368,6 +389,9 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
   .rounded-md {
     border-radius: var(--radius-md);
   }
@@ -378,11 +402,17 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-transparent {
+    border-color: transparent;
+  }
   .border-white {
     border-color: var(--color-white);
   }
   .bg-\[rgba\(7\,26\,84\,1\)\] {
     background-color: rgba(7,26,84,1);
+  }
+  .bg-\[rgba\(251\,188\,4\,1\)\] {
+    background-color: rgba(251,188,4,1);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -404,6 +434,33 @@
   }
   .bg-gray-500 {
     background-color: var(--color-gray-500);
+  }
+  .bg-orange-500 {
+    background-color: var(--color-orange-500);
+  }
+  .bg-orange-500\/30 {
+    background-color: color-mix(in srgb, oklch(70.5% 0.213 47.604) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-orange-500) 30%, transparent);
+    }
+  }
+  .bg-orange-500\/40 {
+    background-color: color-mix(in srgb, oklch(70.5% 0.213 47.604) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-orange-500) 40%, transparent);
+    }
+  }
+  .bg-orange-500\/50 {
+    background-color: color-mix(in srgb, oklch(70.5% 0.213 47.604) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-orange-500) 50%, transparent);
+    }
+  }
+  .bg-orange-500\/70 {
+    background-color: color-mix(in srgb, oklch(70.5% 0.213 47.604) 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-orange-500) 70%, transparent);
+    }
   }
   .bg-linear-to-b {
     --tw-gradient-position: to bottom;
@@ -483,6 +540,9 @@
   .align-baseline {
     vertical-align: baseline;
   }
+  .align-top {
+    vertical-align: top;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -499,8 +559,21 @@
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   .text-\[rgba\(251\,188\,4\,1\)\] {
     color: rgba(251,188,4,1);
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-gray-700 {
+    color: var(--color-gray-700);
+  }
+  .text-orange-500 {
+    color: var(--color-orange-500);
   }
   .text-white {
     color: var(--color-white);
@@ -562,6 +635,23 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .sm\:w-full {
+    @media (width >= 40rem) {
+      width: 100%;
+    }
+  }
+  .sm\:text-2xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .sm\:text-3xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -577,39 +667,9 @@
       display: none;
     }
   }
-  .md\:w-5 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 5);
-    }
-  }
-  .md\:w-20 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 20);
-    }
-  }
-  .md\:w-50 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 50);
-    }
-  }
-  .md\:w-\[5\] {
-    @media (width >= 48rem) {
-      width: 5;
-    }
-  }
   .md\:w-\[50\%\] {
     @media (width >= 48rem) {
       width: 50%;
-    }
-  }
-  .md\:w-\[200px\] {
-    @media (width >= 48rem) {
-      width: 200px;
-    }
-  }
-  .md\:w-\[300px\] {
-    @media (width >= 48rem) {
-      width: 300px;
     }
   }
   .md\:w-\[400px\] {
@@ -617,14 +677,24 @@
       width: 400px;
     }
   }
+  .md\:w-full {
+    @media (width >= 48rem) {
+      width: 100%;
+    }
+  }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-4 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
-    }
-  }
-  .md\:text-center {
-    @media (width >= 48rem) {
-      text-align: center;
     }
   }
   .md\:text-2xl {
