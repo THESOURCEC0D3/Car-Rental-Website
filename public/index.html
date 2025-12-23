@@ -57,56 +57,68 @@
      class="fixed inset-0 cursor-pointer bg-black bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden z-10 backdrop-blur-lg">
 </div>
     <main class="pt-5">
-        <section id="hero-section" aria-labelledby="#hero-header" class="flex flex-col gap-16 md:flex-row justify-center items-centerz mt-10 p-2">
+        <section id="hero-section" aria-labelledby="#hero-header" class="flex flex-col gap-16 md:flex-row justify-center items-centerz mt-10 px-5 py-6 bg-[rgb(39,39,39)]">
+
             <div id="section1" class="space-y-6 md:w-[50%] flex flex-col justify-center">
-                <h2 id="hero-header" class="text-2xl sm:text-3xl md:text-4xl text-center">Drive, Manage, and Earn.<br><span class="text-[rgba(251,188,4,1)]">All in One Platform</span></h2>
-                <p class="text-center text-xl sm:text-2xl md:text-3xl">Fleetly lets renters find reliable cars with quick reservations and flexible payments, while giving owners a powerful dashboard to manage fleets, track bookings, and grow revenue all in one seamless platform.</p>
+                <h2 id="hero-header" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center text-white font-bold">Your Perfect Ride,<br><span class="bg-linear-to-r from-blue-500 to-blue-300 bg-clip-text text-transparent">Just a Click Away.</span></h2>
+                <p class="text-center text-base sm:text-lg md:text-xl text-white">Discover Nigeria's premier car rental platform. Rent premium vehicles instantly or list your fleet to earn extra income.</p>
                 <div class="flex flex-col gap-4 md:flex-row justify-center items-center">
-                    <a class="border py-3.5 px-8 rounded-md bg-[rgba(7,26,84,1)] w-3/4 md:w-[50%] text-center text-white">Sign Up</a>
-                    <a class="border py-3.5 px-8 rounded-md w-3/4 md:w-[50%] text-center">Log In</a>
+                    <a class="border py-3.5 px-8 rounded-md bg-blue-600 hover:bg-blue-700 text-base sm:text-lg md:text-xl w-3/4 md:w-[50%] text-center text-white cursor-pointer">Rent a Car</a>
+                    <a class="border py-3.5 px-8 rounded-md w-3/4 md:w-[50%] text-center cursor-pointer border-orange-500 text-orange-500 text-base sm:text-lg md:text-xl hover:bg-orange-500 hover:text-white">List Your Car</a>
                 </div>
-                 <img src="../assets/images/speedometer.png" alt="" class="blur-sm md:w-[400px] self-center" >
+                <div class="border-t border-gray-400 flex items-center gap-20 pt-5">
+                    <div>
+                        <p class="text-xl sm:text-2xl md:text-3xl font-bold text-blue-500">500&plus;</p>
+                        <p class="text-sm sm:text-base text-gray-400">Available Cars</p>
+                    </div>
+                    <div>
+                        <p class="text-xl sm:text-2xl md:text-3xl font-bold text-blue-500">1000&plus;</p>
+                        <p class="text-sm sm:text-base text-gray-400">Happy Customers</p>
+                    </div>
+                    <div>
+                        <p class="text-xl sm:text-2xl md:text-3xl font-bold text-blue-500">4.9&star;</p>
+                        <p class="text-sm sm:text-base text-gray-400">Average Rating</p>
+                    </div>
+                    <div></div>
+                </div>
             </div>
 
-            <div id="section2" class="flex flex-col justify-center items-center gap-6 md:w-[50%]">
+            <div id="section2" class="flex flex-col justify-center items-center gap-6 md:w-[50%] bg-linear-to-b from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
                 <div>
-                    <img src="../assets/images/car1.svg" alt="picture of a car" class="sm:w-full">
+                    <img src="../assets\images\MainCar.svg" alt="picture of a car" class="w-full h-full object-contain">
                 </div>
-                <div class="flex gap-4 justify-center">
-                    <div>
-                        <p>200km/h</p>
-                        <p>Highest Speed</p>
+                <div class="grid grid-cols-2 gap-4 justify-center w-full">
+                    <div class="rounded-lg bg-gray-800 p-2.5 sm:p-3 md:p-4 text-center">
+                        <p class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white">200km/h</p>
+                        <p class="text-xs sm:text-sm text-gray-400">Top Speed</p>
                     </div>
-                    <div class="flex gap-1.5">
-                        <div class="w-0.5 bg-gray-500 h-full"></div>
+                    <div  class="rounded-lg bg-gray-800 p-2.5 sm:p-3 md:p-4 text-center">
                         <div>
-                            <p class="">160Km</p>
-                            <p>Battery Range</p>
+                            <p  class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white">450hp</p>
+                            <p class="text-xs sm:text-sm text-gray-400">Horsepower</p>
                         </div>
                     </div>
-                    <div class="flex gap-1.5">
-                        <div class="w-0.5 bg-gray-500 h-full"></div>
+                    <div  class="rounded-lg bg-gray-800 p-2.5 sm:p-3 md:p-4 text-center">
                         <div>
-                            <p>4 hours</p>
-                            <p>Charging Time</p>
+                            <p  class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white">4 hours</p>
+                            <p class="text-xs sm:text-sm text-gray-400">Charging Time</p>
                         </div>
                     </div>
-                    <div class="flex gap-1.5">
-                        <div class="w-0.5 bg-gray-500 h-full block"></div>
+                    <div  class="rounded-lg bg-gray-800 p-2.5 sm:p-3 md:p-4 text-center">
                         <div>
-                            <p>1696kg</p>
-                            <p>Weight</p>
+                            <p  class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white">1696kg</p>
+                            <p class="text-xs sm:text-sm text-gray-400">Weight</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="how-it-works" aria-labelledby="#how-header" class="mt-8 py-16 sm:py-18 md:py-24 bg-linear-to-b from-gray-300 to-gray-700">
+        <section id="how-it-works" aria-labelledby="#how-header" class="py-16 sm:py-18 md:py-24 bg-linear-to-b from-gray-700 to-gray-300">
             <h2 class="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-white">How It Works</h2>
-            <p class="text-center mt-3 text-base sm:text-lg md:text-xl text-grey-300 ">Simple steps for both renters and owners to get started on fleetly</p>
+            <p class="text-center text-gray-100 mt-3 text-base sm:text-lg md:text-xl text-grey-300 ">Simple steps for both renters and owners to get started on fleetly</p>
 
-            <div class="flex gap-5 justify-center items-center mt-6 border w-3/4 md:w-[50%] mx-auto rounded p-0.5">
+            <div class="flex gap-5 justify-center items-center mt-6 border border-white w-3/4 md:w-[50%] mx-auto rounded p-1.5">
                 <a id="rentersTab" href="" class="flex-1 text-center rounded p-2 bg-[rgba(7,26,84,1)] text-white transition-colors cursor-pointer">For Renters</a>
                 <a id="ownersTab" href="" class="flex-1 text-center p-2 rounded transition-colors cursor-pointer">For Owners</a>
             </div>
@@ -238,7 +250,7 @@
             <p class="text-base sm:text-lg md:text-xl text-gray-300 text-center">See what our Customers have to say</p>
             </div>
             <div id="testimonial-cards" class="grid sm:grid-cols-3 w-[90%] mx-auto gap-6 mt-8">
-                <div class="flex flex-col gap-4 border border-gray-700 rounded-xl sm:rounded-2xl bg-gray-900 p-5 sm:p-6 md:p-8 shadow-md flex-1">
+                <div class="flex flex-col gap-4 border border-gray-700 rounded-xl sm:rounded-2xl bg-gray-900 p-5 sm:p-6 md:p-8 shadow-md flex-1 h-full">
                     <div class="flex gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 sm:h-5 sm:w-5 fill-yellow-400 text-yellow-400"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 sm:h-5 sm:w-5 fill-yellow-400 text-yellow-400"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
@@ -248,15 +260,14 @@
                     </div>
                     <div class="text-white">Listing my fleet on fleetly has been a game changer. The platform is easy to use and I've seen a 40% increase in bookings!</div>
                     <div class="flex items-center gap-3">
-                        <p class="text-2xl text-blue-500 w-10 h-10 bg-blue-500/10 rounded-full text-center font-bold">A</p>
+                        <p class="text-base sm:text-lg text-blue-500 w-10 h-10 bg-blue-500/10 rounded-full text-center font-bold flex items-center justify-center">A</p>
                         <div>
-                            <h2 classs="text-2xl sm:text-3xl md:text-4xl text-white">Adebayo Johnson</h2>
+                            <h2 class="text-2xl text-white">Adebayo Johnson</h2>
                             <p class="text-base sm:text-lg md:text-xl text-gray-400">Business Owner</p>
                         </div>
                     </div>
                 </div>
-                <div>
-                        <div class="flex flex-col gap-4 border border-gray-700 rounded-xl sm:rounded-2xl bg-gray-900 p-5 sm:p-6 md:p-8 shadow-md flex-1">
+                        <div class="flex flex-col gap-4 border border-gray-700 rounded-xl sm:rounded-2xl bg-gray-900 p-5 sm:p-6 md:p-8 shadow-md flex-1 h-full">
                     <div class="flex gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 sm:h-5 sm:w-5 fill-yellow-400 text-yellow-400"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 sm:h-5 sm:w-5 fill-yellow-400 text-yellow-400"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
@@ -266,16 +277,14 @@
                     </div>
                     <div class="text-white">The verification was quick and the cars are always in excellent condition. Best car rental experience I've had.</div>
                     <div class="flex items-center gap-3">
-                        <p class="text-2xl text-blue-500 w-10 h-10 bg-blue-500/10 rounded-full text-center font-bold">S</p>
+                        <p class="text-base sm:text-lg text-blue-500 w-10 h-10 bg-blue-500/10 rounded-full text-center font-bold flex items-center justify-center">S</p>
                         <div>
-                            <h2 classs="text-2xl sm:text-3xl md:text-4xl text-white">Sarah Williams</h2>
+                            <h2 class="text-2xl text-white">Sarah Williams</h2>
                             <p class="text-base sm:text-lg md:text-xl text-gray-400">frequent Renter</p>
                         </div>
                     </div>
                 </div>
-                </div>
-                <div>
-                         <div class="flex flex-col gap-4 border border-gray-700 rounded-xl sm:rounded-2xl bg-gray-900 p-5 sm:p-6 md:p-8 shadow-md flex-1">
+                         <div class="flex flex-col gap-4 border border-gray-700 rounded-xl sm:rounded-2xl bg-gray-900 p-5 sm:p-6 md:p-8 shadow-md flex-1 h-full">
                     <div class="flex gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 sm:h-5 sm:w-5 fill-yellow-400 text-yellow-400"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-4 w-4 sm:h-5 sm:w-5 fill-yellow-400 text-yellow-400"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
@@ -285,19 +294,54 @@
                     </div>
                     <div class="text-white">I love how easy it is to book. The instant veriication and transparent pricing make planning trips stress-free.</div>
                     <div class="flex items-center gap-3">
-                        <p class="text-2xl text-blue-500 w-10 h-10 bg-blue-500/10 rounded-full text-center font-bold">C</p>
+                        <p class="text-base sm:text-lg text-blue-500 w-10 h-10 bg-blue-500/10 rounded-full text-center font-bold flex items-center justify-center">C</p>
                         <div>
-                            <h2 classs="text-2xl sm:text-3xl md:text-4xl text-white">Chioma Okafor</h2>
+                            <h2 class="text-2xl text-white">Chioma Okafor</h2>
                             <p class="text-base sm:text-lg md:text-xl text-gray-400">Weekend Traveler</p>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
 
     </main>
-    <footer></footer>
+    <footer class="bg-gray-900 py-7 px-7">
+        <div class="space-y-4 w-[95%] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-2 w-[100%] mx-auto">
+            <div>
+                <img src="../assets/images/footerlogo.svg" alt="Company Logo" class="mb-4">
+                <p class="text-base text-gray-400">Nigeria's most trusted car rental platform, connecting renters with quality vehicles.</p>
+            </div>
+            <div>
+                <h3 class="mb-4 text-xl font-semibold text-white">Company</h3>
+                <ul class="space-y-2 text-gray-400 text-base">
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-4 text-xl font-semibold text-white">Support</h3>
+                <ul class="space-y-2 text-gray-400 text-base">
+                    <li>Help Center</li>
+                    <li>Safety</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-4 text-xl font-semibold text-white">Legal</h3>
+                <ul class="space-y-2 text-gray-400 text-base">
+                    <li>Privacy Policy</li>
+                    <li>Terms oF Service</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="w-[95%]">
+        <div>
+            <p class="text-gray-400 text-center">&copy; 2025 Fleetly. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
 
     <script src="./js/sidebarToggle.js" defer></script>
     <script src="./js/howItWorks.js" defer></script>
