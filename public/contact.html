@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <header class="min-w-full flex justify-between items-center align-baseline bg-gray-100/90 m-0 p-3 backdrop-blur-2xl shadow-lg fixed top-0 left-0 z-40">
+        <a href="./index.html">
+            <div class="flex m-0 p-0 items-center">
+            <img src="../assets/icons/favicon.svg" alt="Company Logo" class="w-7 m-0">
+            <p class="text-4xl m-0">Fleetly</p>
+        </div>
+        </a>
+        <nav>
+            <a href="./fleet.html">Browse Cars</a>
+        </nav>
+        <div class="flex gap-5">
+            <div>
+                <a>Login</a>
+            </div>
+            <div>
+                <a>Sign Up</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="mainContact-section" class="bg-[#272727] py-24">
+            <div class="w-[90%] mx-auto">
+
+                <div class="text-center">
+                <h1 class="text-4xl font-bold text-white">Contact Us</h1>
+                <p class="text-white text-lg mt-4">Have a question? We would love to hear from you. Send us a message and we will respond as soon as possible.</p>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-5 mt-10 text-white">
+                <div class="grid grid-cols-1 gap-5 w-full md:w-[30%]">
+                    <div class="rounded-xl border border-gray-700 bg-gray-800 p-6 space-y-5">
+                        <div class=" bg-blue-500/10 rounded-full p-4 w-fit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-6 w-6 text-blue-500"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">Email</h3>
+                        <div>
+                        <p>support@fleetly.com</p>
+                        <p>info@fleetly.com</p>
+                        </div>
+                    </div>
+                    <div class="rounded-xl border border-gray-700 bg-gray-800 p-6 space-y-5">
+                        <div class=" bg-blue-500/10 rounded-full p-4 w-fit">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-6 w-6 text-blue-500"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <h3  class="text-lg font-semibold">Phone</h3>
+                        <div>
+                        <p>&plus;234 800 000 000</p>
+                        <p>Mon-Fri, 9am-6pm WAT</p>
+                        </div>
+                    </div>
+                   <div class="rounded-xl border border-gray-700 bg-gray-800 p-6 space-y-5">
+                        <div class=" bg-blue-500/10 rounded-full p-4 w-fit">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-6 w-6 text-blue-500"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <h3  class="text-lg font-semibold">Office Address</h3>
+                        <div>
+                        <p>123 Victoria Island</p>
+                        <p>Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-[70%] border border-gray-700 bg-gray-800 px-6 py-8 rounded-xl h-fit">
+                      <form class="w-[95%] mx-auto space-y-8">
+                        <div class="flex gap-5 justify-between">
+                            <div class="flex-1">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John Doe" class="border border-gray-700 p-2.5 block w-full rounded-lg bg-gray-900 text-white focus:outline-none mt-3">
+                            </div>
+                            <div class="flex-1">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" placeholder="john@example.com" class="border border-gray-700 p-2.5 block w-full rounded-lg bg-gray-900 text-white focus:outline-none mt-3">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="How can we help?" class="border border-gray-700 p-2.5 block w-full rounded-lg bg-gray-900 text-white focus:outline-none mt-3">
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Type your message here..." class="border border-gray-700 p-2.5 block w-full rounded-lg bg-gray-900 text-white focus:outline-none mt-3" placeholder="Tell us more about your enquiry..."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 px-4 rounded-lg w-full cursor-pointer">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 py-7 px-7">
+        <div class="space-y-4 w-[95%] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-2 w-[100%] mx-auto">
+            <div>
+                <img src="../assets/images/footerlogo.svg" alt="Company Logo" class="mb-4">
+                <p class="text-base text-gray-400">Nigeria's most trusted car rental platform, connecting renters with quality vehicles.</p>
+            </div>
+            <div>
+                <h3 class="mb-4 text-xl font-semibold text-white">Company</h3>
+                <ul class="space-y-2 text-gray-400 text-base">
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li><a href="./contact.html">contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-4 text-xl font-semibold text-white">Support</h3>
+                <ul class="space-y-2 text-gray-400 text-base">
+                    <li>Help Center</li>
+                    <li>Safety</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-4 text-xl font-semibold text-white">Legal</h3>
+                <ul class="space-y-2 text-gray-400 text-base">
+                    <li>Privacy Policy</li>
+                    <li>Terms oF Service</li>
+                </ul>
+            </div>
+        </div>
+       <div class="border-t border-gray-400 flex justify-center pt-5 text-center">
+            <p class="text-gray-400">&copy; 2025 Fleetly. All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

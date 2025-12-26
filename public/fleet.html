@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+       <header class="min-w-full flex justify-between items-center align-baseline bg-gray-100/90 m-0 p-3 backdrop-blur-2xl shadow-lg fixed top-0 left-0 z-40">
+        <a href="./index.html">
+            <div class="flex m-0 p-0 items-center">
+            <img src="../assets/icons/favicon.svg" alt="Company Logo" class="w-7 m-0">
+            <p class="text-4xl m-0">Fleetly</p>
+        </div>
+        </a>
+        <nav>
+            <a href="./fleet.html">Browse Cars</a>
+        </nav>
+        <div class="flex gap-5">
+            <div>
+                <a>Login</a>
+            </div>
+            <div>
+                <a>Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="filter-section" class="w-full py-24">
+            <div class="w-[90%] mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+                    <div class="flex items-center gap-2 border border-gray-300 rounded-lg px-3 focus-within:ring-2 focus-within:ring-blue-500/30">
+  
+  <svg xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 24 24"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       class="h-5 w-5 text-gray-400">
+    <circle cx="11" cy="11" r="8"></circle>
+    <path d="m21 21-4.3-4.3"></path>
+  </svg>
+
+  <input
+    type="text"
+    id="searchmake"
+    placeholder="Search by make or model..."
+    class="flex-1 py-2 outline-none border-none text-base"
+  />
+
+</div>
+
+                    <div>
+                        <select class="focus:ring-blue-500/30 focus:ring border border-gray-300 rounded-lg px-3 py-2 w-full outline-none">
+                            <option value="All-Types">All Types</option>
+                            <option value="SUV">SUV</option>
+                            <option value="Sedan">Sedan</option>
+                            <option value="Truck">Truck</option>
+                            <option value="van">Van</option>
+                            <option value="Luxury">Luxury</option>
+                            <option value="Convertible">Convertible</option>
+                            <option value="Sports">Sports</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="number" id="min-price" class="border border-gray-300 rounded-lg w-full py-2 text-base text-gray-900 px-3 focus:ring-2 focus:ring-blue-500/30 focus:outline-none" placeholder="Min Price">
+                    </div>
+                    <div>
+                         <input type="number" id="max-price" class="border border-gray-300 rounded-lg w-full py-2 text-base text-gray-900 px-3 focus:ring-2 focus:ring-blue-500/30 focus:outline-none" placeholder="Max Price">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full pb-20">
+    <div class="w-[90%] mx-auto">
+        <div id="car-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            </div>
+    </div>
+        </section>
+    </main>
+</body>
+</html>
