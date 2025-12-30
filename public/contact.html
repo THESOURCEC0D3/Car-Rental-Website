@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+               <div id="overlay" 
+     class="fixed inset-0 cursor-pointer bg-black bg-opacity-50 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden z-10 backdrop-blur-lg"></div>
+
       <header class="min-w-full flex justify-between items-center align-baseline bg-gray-100/90 m-0 p-3 backdrop-blur-2xl shadow-lg fixed top-0 left-0 z-40">
         <a href="./index.html">
             <div class="flex m-0 p-0 items-center">
@@ -14,16 +17,40 @@
             <p class="text-4xl m-0">Fleetly</p>
         </div>
         </a>
-        <nav>
+
+       <nav class="hidden md:block">
             <a href="./fleet.html">Browse Cars</a>
         </nav>
-        <div class="flex gap-5">
-            <div>
-                <a>Login</a>
-            </div>
-            <div>
-                <a>Sign Up</a>
-            </div>
+
+        <div class="hidden md:flex gap-2.5">
+            <a href="#" class="list-none border border-white px-3.5 py-1.5 rounded-2xl">Login</a>
+            <a href="#" class="list-none border border-white px-2.5 py-1.5 rounded-2xl bg-blue-800 text-white">Sign Up</a>
+        </div>
+
+         <button id="menubtn" class="cursor-pointer md:hidden">
+             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+           xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+        </button>
+
+          <div id="mobileMenu" class="shadow-lg
+            transform translate-x-full transition-transform duration-300 fixed top-0 right-0 flex flex-col items-start gap-4 p-4 bg-gray-200 w-3/4 rounded-bl-md z-50">
+            <button id="closeBtn" class="self-end mb-4 cursor-pointer">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <ul class="flex flex-col gap-4 w-full mb-4 ">
+                <li><a href="#" class="menu-link">Home</a></li>
+                <li><a href="./about.html" class="menu-link">About</a></li>
+                <li><a href="#" class="menu-link border px-4 py-2 rounded-2xl w-3/4 text-center">Login</a></li>
+                <li><a href="#" class="menu-link border px-4 py-2 rounded-2xl bg-blue-800 text-white w-3/4 text-center">Sign Up</a></li>
+            </ul>
+
         </div>
     </header>
     <main>
@@ -135,5 +162,7 @@
         </div>
         </div>
     </footer>
+
+    <script src="./js/sidebarToggle.js" defer></script>
 </body>
 </html>
