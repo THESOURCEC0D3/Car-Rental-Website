@@ -56,23 +56,23 @@
 </div>
 
                     <div>
-                        <select class="focus:ring-blue-500/30 focus:ring border border-gray-300 rounded-lg px-3 py-2 w-full outline-none">
+                        <select class="focus:ring-blue-500/30 focus:ring border border-gray-300 rounded-lg px-3 py-2 w-full outline-none" id="type-filter">
                             <option value="All-Types">All Types</option>
                             <option value="SUV">SUV</option>
-                            <option value="Sedan">Sedan</option>
-                            <option value="Truck">Truck</option>
-                            <option value="van">Van</option>
-                            <option value="Luxury">Luxury</option>
-                            <option value="Convertible">Convertible</option>
-                            <option value="Sports">Sports</option>
+                            <option value="SEDAN">Sedan</option>
+                            <option value="TRUCK">Truck</option>
+                            <option value="VAN">Van</option>
+                            <option value="LUXURY">Luxury</option>
+                            <option value="CONVERTIBLE">Convertible</option>
+                            <option value="SPORTS">Sports</option>
                         </select>
                     </div>
 
                     <div>
-                        <input type="number" id="min-price" class="border border-gray-300 rounded-lg w-full py-2 text-base text-gray-900 px-3 focus:ring-2 focus:ring-blue-500/30 focus:outline-none" placeholder="Min Price">
+                        <input type="number" id="min-price" class="border border-gray-300 rounded-lg w-full py-2 text-base text-gray-900 px-3 focus:ring-2 focus:ring-blue-500/30 focus:outline-none" placeholder="min-Price" >
                     </div>
                     <div>
-                         <input type="number" id="max-price" class="border border-gray-300 rounded-lg w-full py-2 text-base text-gray-900 px-3 focus:ring-2 focus:ring-blue-500/30 focus:outline-none" placeholder="Max Price">
+                         <input type="number" id="max-price" class="border border-gray-300 rounded-lg w-full py-2 text-base text-gray-900 px-3 focus:ring-2 focus:ring-blue-500/30 focus:outline-none" placeholder="max-Price">
                     </div>
                 </div>
             </div>
@@ -80,10 +80,12 @@
 
         <section class="w-full pb-20">
     <div class="w-[90%] mx-auto">
-        <div id="car-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div id="car-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xxl:grid-cols-4 gap-6">
             </div>
     </div>
         </section>
     </main>
+
+    <script type="module" src="./js/filter.js" defer></script>
 </body>
 </html>
