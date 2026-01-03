@@ -29,8 +29,8 @@
             </ul>
         </nav>
         <div class="hidden md:flex gap-2.5">
-            <a href="#" class="list-none border border-white px-3.5 py-1.5 rounded-2xl">Login</a>
-            <a href="#" class="list-none border border-white px-2.5 py-1.5 rounded-2xl bg-blue-800 text-white">Sign Up</a>
+            <a href="#" id="login" class="auth-btn list-none border border-white px-3.5 py-1.5 rounded-2xl">Login</a>
+            <a href="#" id="signUp" class="auth-btn list-none border border-white px-2.5 py-1.5 rounded-2xl bg-blue-800 text-white">Sign Up</a>
         </div>
 
         <button id="menubtn" class="cursor-pointer md:hidden">
@@ -58,8 +58,8 @@
                 <li><a href="./about.html" class="menu-link">About</a></li>
             </ul>
 
-            <a href="#" class="menu-link border px-4 py-2 rounded-2xl w-3/4 text-center">Login</a>
-            <a href="#" class="menu-link border px-4 py-2 rounded-2xl bg-blue-800 text-white w-3/4 text-center">Sign Up</a>
+            <a href="#" class="auth-btn menu-link border px-4 py-2 rounded-2xl w-3/4 text-center">Login</a>
+            <a href="#" class="auth-btn menu-link border px-4 py-2 rounded-2xl bg-blue-800 text-white w-3/4 text-center">Sign Up</a>
         </div>
       
     </header>
@@ -72,8 +72,8 @@
                 <h2 id="hero-header" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center text-white font-bold">Your Perfect Ride,<br><span class="bg-linear-to-r from-blue-500 to-blue-300 bg-clip-text text-transparent">Just a Click Away.</span></h2>
                 <p class="text-center text-base sm:text-lg md:text-xl text-white">Discover Nigeria's premier car rental platform. Rent premium vehicles instantly or list your fleet to earn extra income.</p>
                 <div class="flex flex-col gap-4 md:flex-row justify-center items-center">
-                    <a class="border py-3.5 px-8 rounded-md bg-blue-600 hover:bg-blue-700 text-base sm:text-lg md:text-xl w-3/4 md:w-[50%] text-center text-white cursor-pointer">Rent a Car</a>
-                    <a class="border py-3.5 px-8 rounded-md w-3/4 md:w-[50%] text-center cursor-pointer border-orange-500 text-orange-500 text-base sm:text-lg md:text-xl hover:bg-orange-500 hover:text-white">List Your Car</a>
+                    <a class="auth-btn border py-3.5 px-8 rounded-md bg-blue-600 hover:bg-blue-700 text-base sm:text-lg md:text-xl w-3/4 md:w-[50%] text-center text-white cursor-pointer">Rent a Car</a>
+                    <a class="auth-btn border py-3.5 px-8 rounded-md w-3/4 md:w-[50%] text-center cursor-pointer border-orange-500 text-orange-500 text-base sm:text-lg md:text-xl hover:bg-orange-500 hover:text-white">List Your Car</a>
                 </div>
                 <div class="border-t border-gray-400 flex items-center gap-20 pt-5">
                     <div>
@@ -352,8 +352,10 @@
         </div>
     </footer>
 
+    
     <script src="./js/sidebarToggle.js" defer></script>
     <script src="./js/howItWorks.js" defer></script>
+    <script src="./js/authentication.js" defer></script>
 
 </body> 
 </html>
